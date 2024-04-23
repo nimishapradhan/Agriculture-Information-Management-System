@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops Details</title>
+      <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="../php/adminDashboard.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+    
+        
+        <div class="icons">
+            <div class="dropdown1">
+                <a id="clipboard-btn" class="fas fa-clipboard"></a>
+                <div class="dropdown-content1">
+                    <a href="../php/adminHistory.php">History</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="login-btn" class="fas fa-user"></a>
+                <div class="dropdown-content">
+                    <a href="./adminChangePassword.html">Change Password</a>
+                    <a href="../php/logout.php">Log Out</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+        <div class="main-cropdetails">
+            <form class="cropDetails" action="../php/adminMarketRate.php" method="post" enctype="multipart/form-data">
+                    
+                <h1>Market Rate</h1>
+                
+                <div class="inputbox_cropdetails">
+                    <label id="marriage"for="cropStatus">Crop Name:</label>
+                    <input list="cropDetails" name="cropDetails" id="cropStatus" placeholder="Select">
+                    <datalist id="cropDetails" name="cropDetails">
+                        <option value="Rice">Rice</option>
+                        <option value="Maize">Maize</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Millet">Millet</option>
+                        <option value="Tea">Tea</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Oranges">Oranges</option>
+                        <option value="Litchi">Litchi</option>
+                        <option value="Radish">Radish</option>
+                        <option value="Buck Wheat">Buck Wheat</option>
+                    </datalist>
+                    
+                    <label for="province1">Province:</label>
+                    <select id="province1" name="province1" required>
+                        <option value="staus">Select</option>
+                        <option value="1">Province 1</option>
+                        <option value="2">Province 2</option>
+                        <option value="3">Province 3</option>
+                        <option value="4">Province 4</option>
+                        <option value="5">Province 5</option>
+                        <option value="6">Province 6</option>
+                        <option value="7">Province 7</option>
+                    </select>
+                    <br><br>
+                    <label for="farmers">Market Rate(Rs.):</label>
+                    <input id="farmers" name="farmers" required>
+
+                    <br><br>
+
+                    <button id= "submit" type="submit" class="register">Submit</button>
+                </div>
+            </div>
+                
+            </form>
+
+        </div>
+
+        
+    
+</body>
+</html>

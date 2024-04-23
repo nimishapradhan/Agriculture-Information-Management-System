@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops Details</title>
+      <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="../php/home.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+    
+        
+        <div class="icons">
+            <div class="dropdown1">
+                <a id="clipboard-btn" class="fas fa-clipboard"></a>
+                <div class="dropdown-content1">
+                    <a href="../php/history.php">History</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="login-btn" class="fas fa-user"></a>
+                <div class="dropdown-content">
+                    <a href="./profileedit.html">Edit Profile</a>
+                    <a href="./changepassword.html">Change Password</a>
+                    <a href="../php/logout.php">Log Out</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+        <div class="main-cropdetails">
+            <form class="cropDetails" action="../php/cropdetails.php" method="post" enctype="multipart/form-data">
+                    
+                <h1>Crop Details</h1>
+                
+                <div class="inputbox_cropdetails">
+                    <label id="marriage"for="cropStatus">Crop Name:</label>
+                    <input list="cropDetails" name="cropDetails" id="cropStatus" placeholder="Select">
+                    <datalist id="cropDetails" name="cropDetails">
+                        <option value="Rice">Rice</option>
+                        <option value="Maize">Maize</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Millet">Millet</option>
+                        <option value="Tea">Tea</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Oranges">Oranges</option>
+                        <option value="Litchi">Litchi</option>
+                        <option value="Radish">Radish</option>
+                        <option value="Buck Wheat">Buck Wheat</option>
+                    </datalist>
+                    <label id="imageuploadText"for="imagesupload">Upload Image:</label>
+                    <input id="imagesupload" type="file" name="imagesupload">
+                    <br><br>
+
+                    
+                    <label for="production">Production(kg):</label>
+                    <input id="production" name="production"  type="text" required>
+                    
+
+                    <label for="growthStatus">Growth Status:</label>
+                    <select id="growthStatus" name="growth" required>
+                        <option value="staus">Select</option>
+                        <option value="Slow">Slow</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Fast">Fast</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="fertilizers">Fertilizers Used:</label>
+                    <input type="text" name="fertilizers" id="fertilizers" type="text" required>
+                    
+
+                    <label for="reproductionType">Reproduction Type:</label>
+                    <select id="reproductionType" name="reproduction" required>
+                        <option value="staus">Select</option>
+                        <option value="Asexual">Asexual</option>
+                        <option value="Sexual">Sexual</option>
+                    </select>
+                    <br><br>
+
+                    <label for="cropcycleType">Crop Cycle:</label>
+                    <select id="cropcycleType" name="cropcycle" required>
+                        <option value="staus">Select</option>
+                        <option value="Annual">Annual</option>
+                        <option value="Perennial">Perennial</option>
+                        <option value="Biennial">Biennial</option>
+                    </select>
+
+                    <label for="growth_season">Seasons:</label>
+                    <input  name="seasons" id="growth_season" type="text" required>
+                    <br><br>
+
+                    <label for="farmers">Farmer Rate(Rs.):</label>
+                    <input id="farmers" name="farmers" required>
+
+                    <label for="province1">Province:</label>
+                    <select id="province1" name="province1" required>
+                        <option value="staus">Select</option>
+                        <option value="1">Province 1</option>
+                        <option value="2">Province 2</option>
+                        <option value="3">Province 3</option>
+                        <option value="4">Province 4</option>
+                        <option value="5">Province 5</option>
+                        <option value="6">Province 6</option>
+                        <option value="7">Province 7</option>
+                    </select>
+                    <br><br>
+
+                    <button id= "submit" type="submit" class="register">Submit</button>
+                </div>
+            </div>
+                
+            </form>
+
+        </div>
+
+        
+    
+</body>
+</html>

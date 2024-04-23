@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <a href="./index.html" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+        <nav>
+            <ul class="navigation">
+                <a href="./index.html">Home</a>
+                <a href="./extras/about.html">About Us</a>
+                <a href="./extras/blog.php">Blog</a>
+            </ul>
+        </nav>
+        <!--End of Header section-->
+    </header>
+    
+    <form class="loginBox" action="./php/adminlogin.php" method="post">
+        <h1>Admin Login</h1>
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button class="login" type="submit">Login</button><br><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="../php/home.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+
+        
+    
+        <div class="icons">
+            <div class="dropdown1">
+                <a id="clipboard-btn" class="fas fa-clipboard"></a>
+                <div class="dropdown-content1">
+                    <a href="../php/history.php">History</a>
+                    <a href="./cropdetails.html">Add Crop Details</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="login-btn" class="fas fa-user"></a>
+                <div class="dropdown-content">
+                    <a href="./changepassword.html">Change Password</a>
+                    <a href="../php/logout.php">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    <div class="editprofile">
+        <form class="signupForm" action="../php/profile_edit.php" method="post">
+    <!--  User details contain Name, Email, Username, Date-of-Birth, Contact,and Password form for Registration -->
+            <div class="signup-user-details">
+                <div class="input-box">
+                    <h2>Personal Details</h2>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email"  type="email" >
+    
+        
+                    
+                    <label for="phonenumber">Phone Number:</label>
+                    <label for="phonenumber"></label>
+                    <input id="phonenumber" name="phonenumber"  >
+                    <br><br>
+                    
+                    <label for="education">Education:</label>
+                    <input id="education" name="education"  type="text" >
+
+                    <label id="marriage"for="status">Marital Status:</label>
+                        <select id="status" name="marialStatus" >
+                            <option value="staus">Select</option>
+                            <option value="married">Married</option>
+                            <option value="unmarried">Unmarried</option>
+                        </select>
+
+                    
+                    <br><br>
+
+                    <h2>Family Details</h2>
+                    <label for="spousename">Family Members:</label>
+                    <input id="familymember2" name="familymember" type="text" >
+
+                    <label for="childname">Child's name:</label>
+                    <input id="childname" name="childname" type="text" >
+                    <br><br>
+                
+                    <label for="spousename">Spouse's name:</label>
+                    <input id="spousename" name="spousename" type="text" >
+                    <br><br>
+                    <h2>Residental Details</h2>
+                    <br>
+
+                    <label for="province">Province:</label>
+                    <select id="province" name="province" >
+                        <option value="staus">Select</option>
+                        <option value="one">Province 1</option>
+                        <option value="two">Province 2</option>
+                        <option value="three">Province 3</option>
+                        <option value="four">Province 4</option>
+                        <option value="five">Province 5</option>
+                        <option value="six">Province 6</option>
+                        <option value="seven">Province 7</option>
+                    </select>
+                    
+
+                    <label for="district">District:</label>
+                    <input id="district" name="district" type="text" >
+                    <br><br>
+
+                    <label for="city">Town/City:</label>
+                    <input id="city" name="city"  type="text" >
+                   
+
+                    <label for="street">Street:</label>
+                    <input id="street" name="street" type="text" >
+                    <br><br>
+                   
+                    <label for="ward">Ward:</label>
+                    <input id="ward" name="ward" type="text" >
+
+                    <br><br>
+                    
+        
+                </div>
+            </div>
+            <br>
+            <!-- <button class="submit" type="submit" id="submit">Save Changes</button> -->
+            <button class="registerbtn" type="submit" id="next">Save Changes</button>
+        </form>
+    </div>
+
+    <!-- <div class="main-profile-edit">
+        <form class="profile-edit" action="../php/profile_edit.php" method="post">
+            <h1>Edit Profile</h1>
+    
+            <div class="edit_profile">
+                <div class="user-edit-details">
+
+                    <h2>Personal Details:</Details></h2>
+      
+                    <label for="email">Email:</label>
+                    <input id="email" name="email"  type="email" >
+                    
+                    
+                    <label for="phonenumber">Phone Number:</label>
+                    <input id="phonenumber" name="phonenumber"  >
+                    <br><br>
+
+                    <label for="marital_status">Marital Status:</label>
+                    <input id="marital_status" name="marital_status"  type="text" >
+
+                    <label for="education">Education:</label>
+                    <input id="education" name="education"  type="text" >
+                    <br><br>
+                    
+                    <h2>Family Details:</h2>
+
+                    <label for="spouse_name">Spouse Name:</label>
+                    <input id="spouse_name" name="spouse_name"  type="text" >
+
+                    <label for="num_children">Number of Children:</label>
+                    <input id="num_children" name="num_children"  type="text" >
+                    <br><br>
+                    
+                    <label for="children_name">Name of Children:</label>
+                    <input id="children_name" name="children_name"  >
+                    <input id="children_name" name="children_name"  > 
+                    <br><br>
+
+                    
+                    <h2>Address:</h2>
+
+                    <label for="province">Province:</label>
+                    <input id="province" name="province"  type="text" >
+
+                    <label for="district">District:</label>
+                    <input id="district" name="district"  type="text" >
+                    <br><br>
+
+
+                    <label for="ward">ward:</label>
+                    <input id="ward" name="Ward"  type="text" >
+
+                    <label for="location">Location:</label>
+                    <input id="location" name="location"  type="text" >
+                    <br><br>
+
+                    <label for="tole">Tole:</label>
+                    <input id="tole" name="tole"  type="text" >
+                    <br><br>
+                    
+                 
+        
+                </div>
+            </div>
+    
+            
+            
+            
+            
+            <button class="submit" type="submit" id="submit">Save Changes</button>
+            <button class="cancel" type="submit" id="cancel">Cancel</button>
+        </form>
+    </div> -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>New Password</title>
+</head>
+<body>
+    <header class="header">
+
+        <a href="../php/adminDashboard.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+
+        
+    
+        <div class="icons">
+            <div class="dropdown1">
+                <a id="clipboard-btn" class="fas fa-clipboard"></a>
+                <div class="dropdown-content1">
+                    <a href="../php/adminHistory.php">History</a>
+                    <a href="../extras/adminMarketRate.html">Add Market Details</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="login-btn" class="fas fa-user"></a>
+                <div class="dropdown-content">
+                    <a href="../php/logout.php">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-addblog">
+        <form class="addblog" action="../php/addblog.php" method="post">
+            <h5>Add Blog</h5>
+    
+            <div class="add_blog">
+                <div class="add_new_blog">
+
+
+                    <label for="title">Blog Title:</label>
+                    <input class="title" id="title" name="title" required >
+                    <br><br>
+                    
+                    <textarea class ="field" id="field" name="field"required> </textarea>
+   
+        
+                </div>
+            </div>
+            <button class="submitbtn" type="submit" id="submit" >Submit</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

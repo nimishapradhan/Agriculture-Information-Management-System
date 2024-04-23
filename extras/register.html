@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--Header-->
+<header class="header">
+    <a href="../index.html" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+    <nav>
+        <ul class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./blog.php">Blog</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./login.html">Login</a>
+        </ul>
+    </nav>
+    <!--End of Header section-->
+</header>
+
+    <div class="main-signup-form">
+        <form class="signupForm" action="../php/register.php" method="post">
+            <h1>Register</h1>
+    <!--  User details contain Name, Email, Username, Date-of-Birth, Contact,and Password form for Registration -->
+            <div class="signup-user-details">
+                <div class="input-box">
+                    <h2>Personal Details</h2>
+                    <label for="name">Name:</label>
+                    <input id="firstname" name="firstname" type="text" placeholder="First Name" required>
+                    <input id="middlename" name="middlename" type="text" placeholder="Middle Name">
+                    <input id="lastname" name="lastname" type="text" placeholder="Last Name" required>
+                    <br><br>
+                    
+                    
+                    <label for="email">Email:</label>
+                    <input id="email" name="email"  type="email" required>
+    
+                    <label  for="username">Username:</label>
+                    <label for="username"></label>
+                    <input id="username" name="username" type="text" required>
+                    <br><br>
+                    
+                    <label for="dateofbirth">DOB:</label>
+                    <input id="dateofbirth" name="dateofbirth" placeholder="MM/DD/YY"required>
+                    
+                    <label for="phonenumber">Phone Number:</label>
+                    <label for="phonenumber"></label>
+                    <input id="phonenumber" name="phonenumber" required>
+                    <br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" type="text" required>
+                    <p class="passwordNote">Note: Password must be at least 6 characters.</p>
+
+                    <label for="password">Confirm Password:</label>
+                    <label for="password"></label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" type="text" required>
+                    <br><br>
+
+                    <label for="nationality">Nationality:</label>
+                        <select id="nationality" name="nationality" required>
+                            <option value="staus">Select</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="france">France</option>
+                            <option value="india">India</option>
+                            <option value="nepal">Nepal</option>
+                            <option value="uk">UK</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="idnumber">Citizenship Number:</label>
+                        <input id="idnumber" name="identity"  type="text" required>
+                    <br><br>
+
+                    <label for="education">Education:</label>
+                    <input id="education" name="education"  type="text" required>
+
+                    <label id="marriage"for="status">Marital Status:</label>
+                        <select id="status" name="marialStatus" required>
+                            <option value="staus">Select</option>
+                            <option value="married">Married</option>
+                            <option value="unmarried">Unmarried</option>
+                        </select>
+
+                    
+                    <br><br>
+
+                    <h2>Family Details</h2>
+
+                    <label for="fathername">Father's name:</label>
+                    <input id="fathername" name="fathername" type="text" required>
+
+                    <label for="mothername">Mother's name:</label>
+                    <input id="mothername" name="mothername" type="text" required>
+                    <br><br>
+                    
+                    <label for="spousename">Spouse's name:</label>
+                    <input id="spousename" name="spousename" type="text">
+
+                    <label for="childname">Child's name:</label>
+                    <input id="childname" name="childname" type="text">
+                    <br><br>
+                
+                    <label for="familymember">Family Members:</label>
+                    <input id="familymember" name="familymember" type="text" required>
+                    <br><br>
+
+                    <h1>Residental Details</h1>
+                    <br>
+
+                    <label for="province">Province:</label>
+                    <select id="province" name="province" required>
+                        <option value="staus">Select</option>
+                        <option value="1">Province 1</option>
+                        <option value="2">Province 2</option>
+                        <option value="3">Province 3</option>
+                        <option value="4">Province 4</option>
+                        <option value="5">Province 5</option>
+                        <option value="6">Province 6</option>
+                        <option value="7">Province 7</option>
+                    </select>
+                    
+
+                    <label for="district">District:</label>
+                    <input id="district" name="district" type="text" required>
+                    <br><br>
+
+                    <label for="city">Town/City:</label>
+                    <input id="city" name="city"  type="text" required>
+                   
+
+                    <label for="street">Street:</label>
+                    <input id="street" name="street" type="text" required>
+                    <br><br>
+                   
+                    <label for="ward">Ward:</label>
+                    <input id="ward" name="ward" type="text" required>
+
+                    <br><br>
+                    
+        
+                </div>
+            </div>
+    
+            <div class="gender-details">
+                <label for="gender">GENDER:</label>
+                <br>
+    
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Prefer not to say
+            </div>
+            
+            <label>
+                <input type="checkbox" id="checkbox" name="agree"> I agree to all the terms and policy*
+            </label>
+            <br>
+            <button class="registerbtn" type="submit" id="next">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
